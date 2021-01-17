@@ -1,3 +1,4 @@
+'''
 H, W = map(int, input().split())
 
 vec = []
@@ -17,5 +18,14 @@ for i in tmp_vec:
     for j in i:
         sum += (j-total_min)
 print(sum)
+'''
+
+import numpy as np
+
+H,W = map(int,input().split())
+A = [list(map(int,input().split())) for _ in range(H)]
+A = np.array(A)
+print(np.sum(A-np.min(A)))
+
 
 
