@@ -9,5 +9,5 @@ for i in range(2, int(math.sqrt(n))+1):
         total.append(i**j)
         j+=1
 total = set(total)
-#pdb.set_trace()
+pdb.set_trace()
 print(n-len(total))

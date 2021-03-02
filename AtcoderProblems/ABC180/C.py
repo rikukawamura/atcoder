@@ -5,6 +5,7 @@ TLEになる．https://qiita.com/u2dayo/items/204b73fdb98fa5e4a543を参考に�
 import itertools
 import operator
 import functools
+import pdb
 
 def prime_factorize(n):
     a = []

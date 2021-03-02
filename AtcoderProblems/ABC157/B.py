@@ -24,12 +24,15 @@ for i in a_slope:
     bingo.append(i)
 n = int(input())
 b = [int(input()) for _ in range(n)]
-pdb.set_trace()
 
+flag = False
 for i in bingo:
-    for j in itertools.permutations(i):
-        pdb.set_trace()
-        if i in b:
-            print('Yes')
-            exit()
-print('No')
+    for k, j in enumerate(i):
+        if j not in b:
+            break
+        elif k == 2:
+            flag = True
+if flag:
+    print('Yes')
+else:
+    print('No')
