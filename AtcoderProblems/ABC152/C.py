@@ -1,10 +1,15 @@
 import pdb
 
+# https://atcoder.jp/contests/abc152/submissions/20625449を参考にした
 n = int(input())
-p = list(map(int, input().split()))
+p_list = list(map(int, input().split()))
 
-count = 0
-for i in range(n):
-    if p[i] <= min(p[:i+1]):
-        count += 1
-print(count)
+counter = 0
+min_num = p_list[0]
+
+for x in p_list:
+    if min_num >= x:
+        counter += 1
+        min_num = x
+
+print(counter)

@@ -1,17 +1,17 @@
 import pdb
 
-X, N = map(int, input().split())
-P = list(map(int, input().split()))
+#　https://note.com/nanigashi/n/na06f4a4bf4ddを参考にした
+# ...,x-2,x-1,x,x+1,x+2,...とxに-1,+1,-2,+2と幅を広げて探索する方法はc問題では頻出な気がする
+x, n = map(int, input().split())
+p_list = list(map(int, input().split()))
 
-total_list = list(range(1, 101))
-Q = [0] + list(set(total_list) - set(P))
-pdb.set_trace()
-
-tmp = 101
-for i in Q:
-    mini = abs(X - i)
-    if mini < tmp:
-        tmp = mini
-        output = i
-
-print(output)
+if n == 0:
+   print(x)
+else:
+   for i in range(0,100):
+       if not x-i in p_list:
+           print(x-i)
+           break
+       elif not x+i in p_list:
+           print(x+i)
+           break
