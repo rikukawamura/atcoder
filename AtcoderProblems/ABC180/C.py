@@ -7,33 +7,19 @@ import operator
 import functools
 import pdb
 
-def prime_factorize(n):
-    a = []
-    while n % 2 == 0:
-        a.append(2)
-        n //= 2
-    f = 3
-    while f * f <= n:
-        if n % f == 0:
-            a.append(f)
-            n //= f
-        else:
-            f += 2
-    if n != 1:
-        a.append(n)
-    return a
-
 N = int(input())
-x = prime_factorize(N)
-pairs = []
-for i in range(1,len(x)+1):
-    for j in itertools.combinations(x, i):
-        pairs.append(j)
+divs = set()  # 重複を省くために、setを使います
 
-output = []
-for j in set(pairs):
-    output.append(functools.reduce(operator.mul, j))
-output.append(1)
+# 数式的にはx <= N ** 0.5 と同じですが、誤差の出ない整数で比較したほうが安全です
+x = 1
+while x ** 2 <= N:
+    if N % x == 0:
+        divs.add(x)  # setへの追加はappendではなくaddです
+        divs.add(N // x)
+    x += 1
 
-for i in sorted(output):
-    print(i)
+ans = list(divs)  # 昇順にしたいので、リストにしてソートします
+ans.sort()
+
+for x in ans:
+    print(x)
