@@ -6,6 +6,7 @@ Q=[]
 for i in range(N):
 	w=int(input())
 	ok=0
+	pdb.set_trace()
 	for j in range(len(Q)):
 		if w<=Q[j]:
 			ok=1
@@ -14,6 +15,6 @@ for i in range(N):
 	if ok==0:
 		Q.append(w)
 	Q.sort()
-#print(Q)
+
 print(len(Q))
 

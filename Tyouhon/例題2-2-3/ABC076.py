@@ -3,8 +3,10 @@ import pdb
 
 
 def solve(s, t):
+    # 正規表現を使えるように'?'を'.'に変更
     s = s.replace('?', '.')
     ls, lt = len(s), len(t)
+    # sよりもtが長い組み合わせは存在しない
     if ls < lt:
         return 'UNRESTORABLE'
     ans = []

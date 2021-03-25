@@ -25,6 +25,8 @@ for c in steped:
             sima += 1
 
 
+# 海の一つを埋めてDFSで探索
+# 探索した結果，元の陸地数 + 1となっていたら，探索終了
 for i in range(10):
     for j in range(10):
         # 海の一つをうめて陸地を探索
@@ -33,8 +35,9 @@ for i in range(10):
             visit = [[0 for i in range(10)] for j in range(10)]  # 訪問したかを記録しておく
             graph = copy.deepcopy(steped)
             graph[i][j]="o"
-            flag = False
+
             # スタートの位置を決定(これは別にどこでもいい)
+            flag = False
             for a in range(10):
                 for b in range(10):
                     if graph[a][b] == "o":
@@ -43,6 +46,7 @@ for i in range(10):
                         break
                 if flag:
                     break
+
             dfs(sx,sy)
             # 陸地の数がsima + 1になっていれば島がひとつになったということ
             for k in visit:

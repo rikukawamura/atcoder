@@ -14,6 +14,7 @@ for i in range(2**(n-1)):
         elif bin(i >> j)[-1] == '1':
             l.insert(n-j-1, '+')
     output = ''.join(l)
+    pdb.set_trace()
     if output[1] == '-':
         y = int(output[0]) - int(output[2])
     elif output[1] == '+':
