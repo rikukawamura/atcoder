@@ -10,9 +10,11 @@ for i in range(M): #隣接行列
     adj_matrix[b-1][a-1] = 1
 pdb.set_trace()
 
+# 何通りあるかのカウンター
 cnt = 0
 
 for each in itertools.permutations(range(N)):
+    pdb.set_trace()
     if each[0] != 0:
         break
     factor = 1
