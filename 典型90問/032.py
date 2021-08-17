@@ -13,6 +13,7 @@ def main():
     N = int(input())
     A = [li_int_sp() for _ in range(N)]
     M = int(input())
+    # XとY選手が険悪かをkenakuリストに記録．
     kenaku = [[0] * N for _ in range(N)]
     if M != 0:
         X, Y = list(map(list, (zip(*[li_int_sp() for _ in range(M)]))))

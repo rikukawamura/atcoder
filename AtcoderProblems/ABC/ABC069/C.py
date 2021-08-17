@@ -1,32 +1,35 @@
+def int_sp():
+    return map(int, input().split())
+
+
+def li_int_sp():
+    return list(map(int, input().split()))
+
+def trans_li_int_sp():
+    return list(map(list, (zip(*[li_int_sp() for _ in range(N)]))))
+
+
 import pdb
+from collections import Counter
 
 N = int(input())
-A = list(map(int, input().split()))
+A = li_int_sp()
+A = Counter([x%4 for x in A])
+#pdb.set_trace()
 
-no = []
-yes = []
-
-count = 0
-for a in A:
-    if a == 2:
-        count += 1
-    if a%4 == 0:
-        yes.append(a)
+x, y = 0, 0
+for key, value in zip(A.keys(), A.values()):
+    if key == 2:
+        y += value % 2
+    elif key == 0:
+        x += value
     else:
-        no.append(a)
-
-x = []
-for n, y in zip(no, yes):
-    x.append(n)
-    x.append(y)
-
-if count % 2 == 0:
-    len_no = len(no) - count
-if count % 2 == 1:
-    len_no = len(no) - count + 1
-pdb.set_trace()
-if len_no - len(yes) >= 2:
-    print('No')
-else:
+        y += value
+if y <= x:
     print('Yes')
+else:
+    if y-x == 1:
+        print('Yes')
+    else:
+        print('No')
 

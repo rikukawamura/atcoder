@@ -17,17 +17,17 @@ ans = 0
 for i in range(1, N):
     A_dif.append(A[i]-A[i-1])
     ans += abs(A[i]-A[i-1])
-#pdb.set_trace()
+pdb.set_trace()
 for q in range(Q):
     L, R, V = int_sp()
-    if L >= 2:
+    if L >= 2: # L==1の場合はAが1〜変動するため，不便さの変化がない．
         ans -= abs(A_dif[L-2])
         A_dif[L-2] += V
         ans += abs(A_dif[L-2])
-    if R <= N-1:
+    if R <= N-1: # R==N-1の時も，不便さの変化がない．
         ans -= abs(A_dif[R-1])
         A_dif[R-1] -= V
-        ans += abs(A_dif[R - 1])
+        ans += abs(A_dif[R-1])
     print(ans)
 
 

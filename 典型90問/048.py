@@ -12,6 +12,15 @@ def trans_li_int_sp():
 import pdb
 
 N, K = int_sp()
-A, B = trans_li_int_sp()
-cnt_selected = [0]*N
+
+per_score = []
+for _ in range(N):
+    A, B = int_sp()
+    per_score.append(B)
+    per_score.append(A-B)
+per_score = sorted(per_score, reverse=True)
+print(sum(per_score[:K]))
+
+
+
 

@@ -20,8 +20,5 @@ def main():
         else:
             print(deq[-x])
 
-
-
-
 if __name__ == '__main__':
     main()

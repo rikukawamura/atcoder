@@ -3,7 +3,6 @@ import pdb
 
 sys.setrecursionlimit(10**6)
 def dfs(i,j,a,b):
-    pdb.set_trace()
     global res
     if a<0 or b<0:  # 畳がa枚以下やb枚以下になれば失敗
         return

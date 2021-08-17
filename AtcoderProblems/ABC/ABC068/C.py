@@ -2,21 +2,26 @@ import pdb
 
 
 N, M = map(int, input().split())
-root = [[0]*N for _ in range(N)]
-
+cnt = [0]*N
+start_to_x = []
+x_to_goal = []
 for _ in range(M):
     a, b = map(int, input().split())
-    # a -> b のrootに可能フラグを立てる(1:移動可能, 0:移動不可)
-    root[a-1][b-1] = 1
+    if a == 1:
+        start_to_x.append(b)
+    elif b == 1:
+        start_to_xj.append(a)
+    elif a == N:
+        x_to_goal.append(b)
+    elif b == N:
+        x_to_goal.append(a)
 
-root_t = list(map(list, (zip(*root))))
-if 1 not in root_t[-1]:
+start_to_x = set(start_to_x)
+x_to_goal = set(x_to_goal)
+
+if len(start_to_x & x_to_goal) != 0:
+    print('POSSIBLE')
+else:
     print('IMPOSSIBLE')
-    exit()
 
-for i in range(len(root)):
-    if root[0][i] == 1 and root_t[-1][i] == 1:
-        print('POSSIBLE')
-        exit()
-print('IMPOSSIBLE')
 

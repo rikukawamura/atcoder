@@ -36,7 +36,7 @@ if len(primes) == 1:
     exit()
 
 len_primes = len(primes)
-#pdb.set_trace()
+pdb.set_trace()
 x = 1
 while True:
     if pow(2, x) >= len_primes:

@@ -14,6 +14,6 @@ mod = 10**9+7
 if N == 1:
     print(K)
 else:
-    ans = K * (K-1) * pow(K-2, N-2) % mod
+    ans = (K%mod) * ((K-1)%mod) * pow(K-2, N-2, mod) % mod
     print(ans)
 

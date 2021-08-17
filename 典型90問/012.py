@@ -49,7 +49,7 @@ par = [i for i in range(h * w + 1)]
 grid = [[False] * (w+2) for _ in range(h+2)]
 # 4方向に対する変化量
 d = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-
+pdb.set_trace()
 for i in range(q):
     a = list(map(int,input().split()))
     if a[0] == 1:

@@ -11,11 +11,13 @@ def main():
     N, L = int_sp()
     K = int(input())
     A = li_int_sp()
+
     dif = []
     for i in range(1, N):
         dif.append(A[i]-A[i-1])
     dif.append(L-A[-1])
     dif.insert(0, A[0])
+    pdb.set_trace()
 
     def cnt_count(x):
         length = 0
@@ -29,11 +31,13 @@ def main():
 
     left = 0
     right = L
+    pdb.set_trace()
     while right - left > 1:
         #探索範囲の動き方を確認できるよ．
         print(right, left)
         mid = (left + right) // 2
         # cntがK+1以上なら最も短いものの長さを長くできる可能性がある．
+        # cntは最終的なピースの数
         if cnt_count(mid) >= K+1:
             left = mid
         else:

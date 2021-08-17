@@ -16,23 +16,10 @@ import bisect
 N = int(input())
 A = sorted(li_int_sp())
 Q = int(input())
-#pdb.set_trace()
-#print(300000 * log(300000, 2))
-
-def compare(N):
-    return N <= b
 
 output = []
-if N == 1:
-    for _ in range(Q):
-        output.append(abs(A[0]-int(input())))
-
-    for i in output:
-        print(i)
-    exit()
 
 for _ in range(Q):
-    #pdb.set_trace()
     b = int(input())
     index = bisect.bisect_left(A, b)
     if index == 0:

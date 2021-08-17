@@ -5,21 +5,16 @@ import numpy as np
 
 N = int(input())
 A = list(map(int, input().split()))
-sei = [x if x < 0 else 0 for x in A]
-not_sei = [x if x >= 0 else 0 for x in A]
+sei = [x if x > 0 else 0 for x in A]
+sei_acc = list(accumulate(sei))
+A_acc = list(accumulate(A))
 
-
-tmp1 = accumulate(A)
-now = [0] + list(accumulate(tmp1))
-
-tmp2 = 0
-val = 0
+pdb.set_trace()
 max_val = -float('INF')
-for i, j in zip(now, A):
-    pdb.set_trace()
-    if j > 0:
-        val = now + j
-    if val > max_val:
-        max_val = val
-    
+now = 0
+for x, y in zip(sei_acc, A_acc):
+    max_val = max(max_val, now+x)
+    now += y
+print(max_val)
+
     

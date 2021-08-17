@@ -25,19 +25,23 @@ gy, gx = gy-1, gx-1
 maze = [input() for _ in range(H)]
 change_direct = [[float('INF')] * W for _ in range(H)] # 初期値は無限大
 deq = deque()
-deq.append((sy, sx, -1)) # スタート地点と方向転換回数-1(最初動いた時0にするため）をpush
+deq.append((sy, sx, -1, -1)) # (スタート地点(y, x),方向転換回数-1(最初動いた時0にするため）, costをpush
 change_direct[sy][sx] = -1
 while deq:
     #pdb.set_trace()
-    y, x, dire = deq.popleft()
+    y, x, dire, cost = deq.popleft()
     for dx, dy, dire2 in dxdy:
-        if (0 <= x + dx < W) and (0 <= y + dy < H) and change_direct[y + dy][x + dx] == float('INF') and maze[y + dy][x + dx] != '#':
+        if (0 <= x + dx < W) and (0 <= y + dy < H) and maze[y + dy][x + dx] != '#':
             # 方向転換するのなら，コスト＋1
             if dire != dire2:
-                change_direct[y + dy][x + dx] = change_direct[y][x] + 1
-                deq.append((y+dy, x+dx, dire2))
+                if change_direct[y+dy][x+dx] < cost + 1:
+                    continue
+                change_direct[y + dy][x + dx] = cost + 1
+                deq.append((y+dy, x+dx, dire2, cost+1))
             # 方向転換しないなら，コストはそのまま
             else:
-                change_direct[y + dy][x + dx] = change_direct[y][x]
-                deq.appendleft((y+dy, x+dx, dire2))
-print(int(change_direct[gy][gx]))
+                if change_direct[y+dy][x+dx] < cost:
+                    continue
+                change_direct[y + dy][x + dx] = cost
+                deq.appendleft((y+dy, x+dx, dire2, cost))
+print(change_direct[gy][gx])

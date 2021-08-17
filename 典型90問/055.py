@@ -65,7 +65,7 @@ def main():
 
     N, P, Q = int_sp()
     A = li_int_sp()
-    #pdb.set_trace()
+    pdb.set_trace()
     count = 0
     for a, b, c, d, e in combinations(A, 5):
         if a%P*b%P*c%P*d%P*e%P == Q:
