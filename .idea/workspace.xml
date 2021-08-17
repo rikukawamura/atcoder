@@ -2,37 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="500386ee-d2c1-442f-a0e3-8449f9848f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC065/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC065/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC068/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC068/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC069/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC069/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC086/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC086/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC094/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC094/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC126/D.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC126/D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC129/C.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC129/C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC134/D.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC134/D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC143/A.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC143/A.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC143/B.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC143/B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC144/A.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC144/A.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC144/B.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC144/B.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC146/py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC182/D.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC182/D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC196/D.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC196/D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC198/E.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC198/E.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC206/D.py" beforeDir="false" afterPath="$PROJECT_DIR$/AtcoderProblems/ABC/ABC206/D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/001.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/001.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/007.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/007.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/012.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/012.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/032.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/032.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/043.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/043.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/048.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/048.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/055.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/055.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/061.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/061.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/064.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/064.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/069.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/069.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/075.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/075.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/076.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/076.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/典型90問/078.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/078.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/典型90問/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/典型90問/temp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/典型90問/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="165">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -110,7 +79,6 @@
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC034/D.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC114/C.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC211/A.py" />
-        <option value="$PROJECT_DIR$/典型90問/temp.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC211/B.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC102/C.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC099/C.py" />
@@ -145,6 +113,7 @@
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC214/C_priority_queue.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC214/D.py" />
         <option value="$PROJECT_DIR$/AtcoderProblems/ABC/ABC176/D.py" />
+        <option value="$PROJECT_DIR$/典型90問/temp.py" />
       </list>
     </option>
   </component>
@@ -184,7 +153,7 @@
               <item name="atcoder" type="462c0819:PsiDirectoryNode" />
               <item name="AtcoderProblems" type="462c0819:PsiDirectoryNode" />
               <item name="ABC" type="462c0819:PsiDirectoryNode" />
-              <item name="ABC176" type="462c0819:PsiDirectoryNode" />
+              <item name="ABC168" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atcoder" type="b2602c69:ProjectViewProjectNode" />
@@ -236,10 +205,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="766" y="25" width="674" height="875" extended-state="0" />
+    <frame x="501" y="25" width="939" height="875" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3062787" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21786493" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2972973" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -771,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/典型90問/temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
         </state>
       </provider>
     </entry>
