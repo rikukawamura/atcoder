@@ -10,5 +10,8 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+S = input()
+if S =='Hello,World!':
+    print('AC')
+else:
+    print('WA')

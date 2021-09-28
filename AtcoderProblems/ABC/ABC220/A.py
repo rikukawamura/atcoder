@@ -8,7 +8,15 @@ def li_int_sp():
 def trans_li_int_sp():
     return list(map(list, (zip(*[li_int_sp() for _ in range(N)]))))
 
+def permutations_count(n, r):
+    return math.factorial(n) // math.factorial(n - r)
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+import math
+
+A, B, C = li_int_sp()
+for i in range(A, B+1):
+    if i%C == 0:
+        print(i)
+        exit()
+print(-1)

@@ -10,5 +10,11 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+X = input().split('.')
+#pdb.set_trace()
+if 0 <= int(X[1]) <= 2:
+    print(X[0]+'-')
+elif 3 <= int(X[1]) <= 6:
+    print(X[0])
+else:
+    print(X[0]+'+')

@@ -10,5 +10,11 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+from itertools import groupby
+S = input()
+out = []
+for key, value in groupby(S):
+    #pdb.set_trace()
+    out.append(key)
+    out.append(str(len(list(value))))
+print(''.join(out))

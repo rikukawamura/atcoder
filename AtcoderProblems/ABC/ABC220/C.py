@@ -13,5 +13,17 @@ def permutations_count(n, r):
 
 import pdb
 import math
+N = int(input())
+A = li_int_sp()
+X = int(input())
+sum_A = sum(A)
+waru = X//sum_A
+amari = X %sum_A
+#pdb.set_trace()
 
-
+total = 0
+for i, a in enumerate(A, 1):
+    total += a
+    if total > amari:
+        print((waru*N)+i)
+        exit()

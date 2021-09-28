@@ -1,19 +1,47 @@
+def int_sp():
+    return map(int, input().split())
+
+
+def li_int_sp():
+    return list(map(int, input().split()))
+
+def trans_li_int_sp():
+    return list(map(list, (zip(*[li_int_sp() for _ in range(N)]))))
+
 import pdb
-import collections
+from collections import deque
 
-S = input()
+S = deque(list(input()))
 Q = int(input())
-query = [list(map(str, input().split())) for _ in range(Q)]
-query_col = collections.Counter(query)
-pdb.set_trace()
 
-for i in query:
+reverse = False
+for _ in range(Q):
     #pdb.set_trace()
-    if len(i) == 1:
-        S = S[::-1]
-    elif len(i) == 3:
-        if i[1] == '1':
-            S = i[2] + S
-        elif i[1] == '2':
-            S = S + i[2]
-print(S)
+    x = list(input().split())
+    x[0] = int(x[0])
+    if len(x) == 3:
+        x[1] = int(x[1])
+    if x[0] == 1:
+        if reverse:
+            reverse = False
+        else:
+            reverse = True
+    elif x[0] == 2 and reverse == False:
+        if x[1] == 1:
+            S.appendleft(x[2])
+        elif x[1] == 2:
+            S.append(x[2])
+    elif x[0] == 2 and reverse == True:
+        if x[1] == 1:
+            S.append(x[2])
+        elif x[1] == 2:
+            S.appendleft(x[2])
+
+if reverse:
+    print(''.join(list(S)[::-1]))
+else:
+    print(''.join(S))
+
+
+
+

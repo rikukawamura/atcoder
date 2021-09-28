@@ -10,5 +10,13 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
+N, K = int_sp()
 A = li_int_sp()
+total = sum(A[0:K])
+tmp = sum(A[0:K])
+
+for i in range(K, N):
+    tmp += A[i]
+    tmp -= A[i-K]
+    total += tmp
+print(total)

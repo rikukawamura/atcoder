@@ -13,5 +13,11 @@ def permutations_count(n, r):
 
 import pdb
 import math
-
-
+lists = ['ABC', 'ARC', 'AGC', 'AHC']
+S1 = input()
+S2 = input()
+S3 = input()
+del lists[lists.index(S1)]
+del lists[lists.index(S2)]
+del lists[lists.index(S3)]
+print(*lists)

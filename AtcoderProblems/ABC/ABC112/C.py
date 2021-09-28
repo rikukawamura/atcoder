@@ -10,5 +10,6 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+N = int(input())
+for _ in range(N):
+    x, y, h = int_sp()

@@ -10,5 +10,18 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
+from collections import defaultdict
+
+N = int(input())
 A = li_int_sp()
+B = defaultdict(int)
+A.sort()
+
+i = 0
+for a in A:
+    if a/2 in B.keys():
+        B[a] = B[a/2]
+    else:
+        B[a] = i
+        i+=1
+print(len(set(B.values())))

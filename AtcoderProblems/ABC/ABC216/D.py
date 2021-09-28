@@ -10,5 +10,9 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+N, M = int_sp()
+K = []
+for _ in range(M):
+    k = int_sp()
+    K.append(li_int_sp())
+pdb.set_trace()

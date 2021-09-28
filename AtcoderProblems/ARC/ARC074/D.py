@@ -14,27 +14,21 @@ import heapq
 
 N = int(input())
 A = li_int_sp()
-X = A[:(N*3)//2]
-Y = A[(N*3)//2:]
 
-preA = []
-for i, x in enumerate(X):
-    preA.append([x, i])
+X = A[:N]
+heapq.heapify(X)
+min_val = heapq.heappop(X)
 
-lasA = []
-for i, y in enumerate(Y, (N*3)//2):
-    lasA.append([-y, i])
+Y = list(map(lambda x: -x, A[N]))
+heapq.heapify(Y)
+min_val = heapq.heappop(X)
+pdb.set_trace()
+for left in range(N+1, 2*N):
+    if A[left] > min_val:
+        min_val = A[left]
+    
 
 
-heapq.heapify(preA)
-heapq.heapify(lasA)
-for _ in range(N//2):
-    heapq.heappop(preA)
-    heapq.heappop(lasA)
 
-pre_total = 0
-las_total = 0
-for i, j in zip(preA, lasA):
-    pre_total += i[0]
-    las_total += -j[0]
-print(pre_total-las_total)
+
+

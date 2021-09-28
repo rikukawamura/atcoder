@@ -8,7 +8,11 @@ def li_int_sp():
 def trans_li_int_sp():
     return list(map(list, (zip(*[li_int_sp() for _ in range(N)]))))
 
+def permutations_count(n, r):
+    return math.factorial(n) // math.factorial(n - r)
 
 import pdb
-N, Q = int_sp()
+import math
+N = int(input())
 A = li_int_sp()
+mod = 998244353

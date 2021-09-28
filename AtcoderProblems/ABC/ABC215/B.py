@@ -10,5 +10,9 @@ def trans_li_int_sp():
 
 
 import pdb
-N, Q = int_sp()
-A = li_int_sp()
+N = int(input())
+k = 0
+while 2**k <= N:
+    k+=1
+
+print(k-1)
